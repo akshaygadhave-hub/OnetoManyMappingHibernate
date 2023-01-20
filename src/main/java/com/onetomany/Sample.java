@@ -31,8 +31,8 @@ public class Sample {
 		set.add(policy2);
 		
 		user.setPolicy(set);
-		user.setName("Akshay");
-		user.setEmail("akshay@rediffmail.com");
+		user.setName("Manisha");
+		user.setEmail("manisha@rediffmail.com");
 		
 		s.save(user);
 		s.save(policy1);
