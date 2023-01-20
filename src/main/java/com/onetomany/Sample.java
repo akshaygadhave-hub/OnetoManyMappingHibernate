@@ -23,16 +23,16 @@ public class Sample {
 		Transaction t = s.beginTransaction();
 		
 		User user = new User();
-		Policy policy1 = new Policy("SK", "Home Insurance", "In-Active", user);
-		Policy policy2 = new Policy("PK", "Car Insurance", "Active", user);
+		Policy policy1 = new Policy("MC", "bike Insurance", "Active", user);
+		Policy policy2 = new Policy("AG", "home Insurance", "Active", user);
 		
 		Set<Policy> set = new HashSet<Policy>();
 		set.add(policy1);
 		set.add(policy2);
 		
 		user.setPolicy(set);
-		user.setName("Manisha");
-		user.setEmail("manisha@rediffmail.com");
+		user.setName("Jeevan");
+		user.setEmail("jeevan@rediffmail.com");
 		
 		s.save(user);
 		s.save(policy1);
